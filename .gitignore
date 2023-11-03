@@ -1,0 +1,95 @@
+# Windows directory-based project artifacts
+windows/*/AppPackages/
+windows/*/BundleArtifacts/
+windows/*/Generated Files/
+windows/*/packages/
+
+# Visual Studio caches and project-related artifacts
+windows/.vs/
+windows/*.VC.db
+windows/*.VC.VC.opendb
+windows/*/x64/
+windows/*/x86/
+windows/*/ARM/
+windows/*/ARM64/
+
+# Ignore the build output directory
+windows/*/Debug/
+windows/*/Release/
+
+# Node-related files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Misc
+*.orig
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc/IDEs
+.vscode/
+*.sw?
+
+# OSX
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# Android/IntelliJ
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+# testing
+/coverage
+
+# MacOS
+.DS_Store
+
