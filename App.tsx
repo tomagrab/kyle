@@ -1,21 +1,22 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 import ChatInput from './components/UI/ChatInput/ChatInput';
+import {GlobalStyles} from './constants/styles/Stylesheet';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello world!</Text>
+    <View style={GlobalStyles.flex1}>
+      <View style={GlobalStyles.flex1}>
+        <Text>Chat App</Text>
+      </View>
 
-      <ChatInput />
+      <View style={GlobalStyles.flex8}>
+        <Text>Hello world!</Text>
+      </View>
+
+      <View style={GlobalStyles.flex1}>
+        <ChatInput />
+      </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
