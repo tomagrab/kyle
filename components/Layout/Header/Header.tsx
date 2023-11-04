@@ -2,7 +2,11 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import {GlobalStyles} from '../../../constants/styles/Stylesheet';
 
-export default function Header() {
+type HeaderProps = {
+  title?: string;
+};
+
+export default function Header({title}: HeaderProps = {title: 'GPT Chat'}) {
   return (
     <View
       style={[
@@ -17,7 +21,7 @@ export default function Header() {
           GlobalStyles.text_center,
           GlobalStyles.text_3xl,
         ]}>
-        Header
+        {title}
       </Text>
     </View>
   );
